@@ -18,11 +18,11 @@ export const Haeader = () => {
     ]
 
     return (
-        <header className={`${!hamburgerOpen ? "h-full w-full":""} z-40 justify-between items-center flex md:justify-center md:items-center md:gap-6`}>
+        <header className={`z-40 nav-bg justify-between items-center flex md:justify-center md:items-center md:gap-6`}>
             <img src={brandlogo} className='aspect-ratio-3/2 object-cover h-15 w-15 md:h-18 md:w-18' alt="" srcset="" />
             <ul
-  className={`w-full py-2
-    absolute left-0 top-30 items-start overflow-hidden transition-all duration-300 ease-in-out
+  className={`w-full py-2 nav-bg
+    absolute left-0 top-22 items-start overflow-hidden transition-all duration-300 ease-in-out
     md:flex md:justify-center md:items-center md:gap-8 md:static md:h-auto md:opacity-100
     ${
       !hamburgerOpen
@@ -34,14 +34,12 @@ export const Haeader = () => {
   {menuItems.map((item, index) => (
     <li
       key={index}
-      className={`nav-item text-lg font-medium cursor-pointer ${!hamburgerOpen ? "pl-10" : "pl-0"}`}
+      className={`tinos-regular nav-item md:text-xl font-medium cursor-pointer ${!hamburgerOpen ? "pl-10" : "pl-0"}`}
     >
       {item.name}
     </li>
   ))}
 </ul>
-
-
             <span
                 className="block md:hidden cursor-pointer"
                 onClick={toggleHamburger}
@@ -51,9 +49,9 @@ export const Haeader = () => {
                         }`}
                 >
                     {hamburgerOpen ? (
-                        <CiMenuBurger className="text-2xl nav-item" />
+                        <CiMenuBurger className="text-2xl tinos-regular nav-item" />
                     ) : (
-                        <IoMdClose className="text-2xl nav-item" />
+                        <IoMdClose className="text-2xl tinos-regular nav-item" />
                     )}
                 </div>
             </span>

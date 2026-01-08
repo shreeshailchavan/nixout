@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export const Footer = () =>{
     return (
-<footer class="footer text-white  rounded-base shadow-xs border border-default">
+<footer class="footer text-white rounded-base shadow-xs border border-default">
     <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
       <span class="text-sm text-body sm:text-center">Copyright © 2026 Nixout. All rights reserved.
     </span>
