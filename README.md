@@ -12,7 +12,7 @@ View the live project here: [shreeshailchavan.github.io/nixout](https://www.goog
 
 ### 1. Dynamic Content Engine
 
-The site utilizes a **Slug-based Routing System**. All services, news articles, and "About" sub-pages are rendered via a single dynamic template. This allows the business to scale its offerings by simply updating a centralized JSON-style data file.
+The site utilizes a **Slug-based Routing System**. All services, and "About" sub-pages are rendered via a single dynamic template. This allows the business to scale its offerings by simply updating a centralized JSON-style data file.
 
 ### 2. B2B Optimized UI/UX
 
