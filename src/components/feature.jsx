@@ -1,52 +1,10 @@
-import { RiRecycleLine } from "react-icons/ri";
-import { GiMeal } from "react-icons/gi";
-import { MdOutlineEco } from "react-icons/md";
-import { BsBoxSeam } from "react-icons/bs";
-import { FaHandsHelping } from "react-icons/fa";
-import { HiOutlineBuildingStorefront } from "react-icons/hi2";
 
+import { services } from "../utils/data";
+import { Link } from "react-router";
 export const Feature = () => {
-const services = [
-  {
-    title: "Biodegradable Packaging Materials",
-    description:
-      "Eco-friendly packaging made from natural materials like bamboo, sugarcane, paper, and plant fibres.",
-    icon: RiRecycleLine,
-  },
-  {
-    title: "Compostable Food & Service Solutions",
-    description:
-      "Compostable containers, tableware, and service items suitable for food and takeaway businesses.",
-    icon: GiMeal,
-  },
-  {
-    title: "Sustainable Business Materials",
-    description:
-      "Biodegradable alternatives for everyday plastic and disposable materials used in business operations.",
-    icon: MdOutlineEco,
-  },
-  {
-    title: "Custom & Branded Eco Packaging",
-    description:
-      "Customisable and branded packaging solutions that align sustainability with your business identity.",
-    icon: BsBoxSeam,
-  },
-  {
-    title: "Ethical Sourcing & Material Advisory",
-    description:
-      "Guidance on responsible material selection, ethical sourcing, and UK-compliant sustainability practices.",
-    icon: FaHandsHelping,
-  },
-  {
-    title: "Flexible Supply for Small Businesses",
-    description:
-      "Low minimum orders and reliable supply plans designed for micro businesses and growing brands.",
-    icon: HiOutlineBuildingStorefront,
-  },
-];
 
     return (
-        <section class="py-6 sm:py-16 lg:py-20">
+      <section class="py-6 sm:py-16 lg:py-20">
    <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
   <div className="text-center">
     <h2 className="text-3xl font-bold text-black leading-tight tinos-regular sm:text-4xl xl:text-5xl font-pj">
@@ -64,10 +22,11 @@ From material selection to reliable supply, we help businesses adopt sustainable
     <div
       key={index}
       className="relative md:p-8 lg:p-14 cursor-pointer group
-        md:border-gray-200 md:border-l md:border-t
-        first:md:border-l-0 md:[&:nth-child(-n+3)]:border-t-0 p-2"
+      md:border-gray-200 md:border-l md:border-t
+      first:md:border-l-0 md:[&:nth-child(-n+3)]:border-t-0 p-2"
         
     >
+      <Link to={"/services/"+service.slug}>
       {/* Hover Borders */}
       {/* <span className="pointer-events-none absolute right-0 top-0 h-full w-[2px] bg-[#8A8635] opacity-0 group-hover:opacity-100 transition-opacity duration-300" /> */}
       <span className="pointer-events-none absolute bottom-0 left-0 w-full h-[2px] bg-[#8A8635] opacity-0 md:group-hover:opacity-100 transition-opacity duration-300" />
@@ -81,6 +40,7 @@ From material selection to reliable supply, we help businesses adopt sustainable
       <p className="mt-5 text-base text-gray-600 font-pj">
         {service.description}
       </p>
+    </Link>
     </div>
   );
 })}

@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import NewsGrid from "../components/newsgrid";
-import news from "../utils/data";
+import {news} from "../utils/data";
 
 export const NewsAndStories = () => {
   const [visibleCount, setVisibleCount] = useState(6);
 
   return (
-    <section className="py-10 sm:py-16 lg:py-20">
+    <section className="py-10 sm:py-16 lg:py-20 tinos-regular">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 
         {/* Header */}
         <div className="max-w-xl mx-auto text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tinos-regular text-gray-900 sm:text-4xl">
             News & Stories
           </h2>
           <p className="mt-4 text-gray-600">

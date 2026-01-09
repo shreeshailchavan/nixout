@@ -2,7 +2,7 @@ import React from "react";
 // Import both from the same line
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"; 
 import NewsCard from "./newscard";
-import news from "../utils/data";
+import {news} from "../utils/data";
 
 export default function NewsGrid({ visibleCount}) {
   return (

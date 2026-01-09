@@ -1,38 +1,6 @@
-export const Team = () =>{
-    return(
-        <section class="py-12 sm:py-16 lg:py-20" id="team">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="text-center">
-            <h2 class="text-3xl font-bold tinos-regular sm:text-4xl xl:text-5xl font-pj">The Minds Shaping <span className="text-[#5C6F2B]">NixOut</span></h2>
-        </div>
-
-        <div class="grid max-w-6xl grid-cols-1 px-20 mx-auto mt-12 text-center sm:px-0 sm:grid-cols-2 md:mt-20 gap-x-8 md:grid-cols-4 gap-y-12 lg:gap-x-16 xl:gap-x-20">
-            <div>
-                <img class="object-cover w-32 h-32 mx-auto rounded lg:w-44 lg:h-44 grayscale filter" src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-1.png" alt="" />
-                <p class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Jerome Bell</p>
-                <p class="mt-2 text-base font-normal text-gray-600 font-pj">Co founder, Chairman, Executive Director</p>
-            </div>
-
-            <div>
-                <img class="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter" src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-2.png" alt="" />
-                <p class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Jerome Bell</p>
-                <p class="mt-2 text-base font-normal text-gray-600 font-pj">Co founder, Chairman, Executive Director</p>
-            </div>
-
-            <div>
-                <img class="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter" src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-3.png" alt="" />
-                <p class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Jerome Bell</p>
-                <p class="mt-2 text-base font-normal text-gray-600 font-pj">Co founder, Chairman, Executive Director</p>
-            </div>
-
-            <div>
-                <img class="object-cover w-32 h-32 mx-auto rounded-full lg:w-44 lg:h-44 grayscale filter" src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-4.png" alt="" />
-                <p class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Jerome Bell</p>
-                <p class="mt-2 text-base font-normal text-gray-600 font-pj">Co founder, Chairman, Executive Director</p>
-            </div>
-        </div>
-
-        <div class="mt-12 sm:mt-16">
+export const Border = () => {
+  return (
+    <div class="mt-4 sm:mt-16">
             <svg class="w-auto h-4 mx-auto text-gray-400" viewBox="0 0 172 16" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 11 1)" />
                 <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 46 1)" />
@@ -60,10 +28,5 @@ export const Team = () =>{
                 <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 144 1)" />
             </svg>
         </div>
-
-        
-    </div>
-</section>
-
-    )
+  );
 }

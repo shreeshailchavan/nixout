@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 const NewsCard = ({ imgSrc, title, excerpt, date, slug, aspect = "h-60" }) => (
-<div className="group relative bg-white p-3 pb-5 shadow-lg transform transition-all hover:-translate-y-2 hover:shadow-xl border border-gray-100">
+<div className="group relative p-3 pb-5 shadow-sm transform transition-all hover:-translate-y-0.5 hover:shadow-md border-b border-[#8A8635]/20">
       {/* 1. The Image Container */}
       <div className="overflow-hidden rounded-sm bg-gray-200">
         <img
