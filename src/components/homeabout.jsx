@@ -10,6 +10,7 @@ export const HomeAbout = () => {
                     <div className="relative">
                         <div className="absolute -bottom-6 -left-6 w-64 h-64 bg-[#8A8635]/10 rounded-full -z-10" />
                         <img 
+                        loading="eager"
                             src={heroImage} 
                             alt="Sustainable Materials" 
                             className="rounded-2xl shadow-2xl w-full object-cover h-[500px]" 

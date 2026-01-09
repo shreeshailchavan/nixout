@@ -33,6 +33,7 @@ export default function Hero() {
                                 {/* Top Large Image */}
                                 <div className="flex-1">
                                     <img
+                                    loading="eager"
                                         src={hero4}
                                         alt="Sustainable biodegradable materials"
                                         className="w-full h-full object-cover rounded-2xl"
@@ -43,6 +44,7 @@ export default function Hero() {
                                 <div className="grid grid-cols-2 gap-6 h-[40%]">
                                     <div>
                                         <img
+                                        loading="eager"
                                             src={hero2}
                                             alt="Eco-friendly packaging"
                                             className="w-full h-full object-cover rounded-2xl"
@@ -51,6 +53,7 @@ export default function Hero() {
 
                                     <div>
                                         <img
+                                        loading="eager"
                                             src={hero3}
                                             alt="Natural packaging materials"
                                             className="w-full h-full object-cover rounded-2xl"

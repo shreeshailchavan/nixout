@@ -38,7 +38,7 @@ useEffect(() => {
 
                     {/* LOGO */}
                     <Link to="/" className="flex-shrink-0">
-                        <img src={brandlogo} className="h-12 md:h-15 w-auto" alt="Nixout" />
+                        <img src={brandlogo} className="h-12 md:h-15 w-auto" loading="eager" alt="Nixout" />
                     </Link>
 
                     {/* DESKTOP NAV */}

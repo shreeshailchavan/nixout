@@ -6,6 +6,7 @@ const NewsCard = ({ imgSrc, title, excerpt, date, slug, aspect = "h-60" }) => (
       {/* 1. The Image Container */}
       <div className="overflow-hidden rounded-sm bg-gray-200">
         <img
+        loading="eager"
           src={imgSrc}
           alt={title}
           // The 'aspect' prop now controls the height dynamically
