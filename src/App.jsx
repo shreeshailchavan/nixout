@@ -1,16 +1,25 @@
 import './App.css'
 import { Haeader } from './components/header'
 import { Footer } from './components/footer'
-import { Home } from './components/home'
-
+import { Home } from './pages/home'
+import {Routes, Route} from 'react-router'
+import { NewsAndStories } from './pages/news'
+import { About } from './pages/about'
 function App() {
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <Haeader/>
-      <Home/>
-      <Footer/>
-    </div>
+    <>
+    <div className="min-h-screen flex flex-col w-full">
+  <Haeader />
+  <Routes>
+    <Route path='/' element={<Home />}/>
+    <Route path='/news' element={<NewsAndStories />}/>
+    <Route path='/aboutus' element={<About />}/>
+  </Routes>
+  <Footer />
+</div>
+
+    </>
   )
 }
 

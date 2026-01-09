@@ -1,8 +1,8 @@
 import brandlogo from '../assets/nixoutlogo (Edited).png';
 import { CiMenuBurger } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
-
 import { useState } from 'react';
+import { Link } from 'react-router';
 
 export const Haeader = () => {
     const [hamburgerOpen, setHamburgerOpen] = useState(true);
@@ -11,14 +11,14 @@ export const Haeader = () => {
     };
 
     const menuItems = [
-        { name: 'About' },
-        { name: 'Services' },
-        { name: 'News & Stories' },
-        { name: 'Contact us' },
+        { name: 'About',link:'/about' },
+        { name: 'Services',link:'/services' },
+        { name: 'News & Stories',link:'/news' },
+        { name: 'Contact us',link:'/contact' },
     ]
 
     return (
-        <header className={`z-40 nav-bg justify-between items-center flex md:justify-center md:items-center md:gap-6`}>
+        <header className={`${hamburgerOpen ? "" : ""} z-40 nav-bg justify-between items-center flex md:justify-center md:items-center md:gap-6`}>
             <img src={brandlogo} className='aspect-ratio-3/2 object-cover h-15 w-15 md:h-18 md:w-18' alt="" srcset="" />
             <ul
   className={`w-full py-2 nav-bg
@@ -34,9 +34,9 @@ export const Haeader = () => {
   {menuItems.map((item, index) => (
     <li
       key={index}
-      className={`tinos-regular nav-item md:text-xl font-medium cursor-pointer ${!hamburgerOpen ? "pl-10" : "pl-0"}`}
+      className={`tinos-regular text-black md:text-2xl font-bold cursor-pointer ${!hamburgerOpen ? "pl-10" : "pl-0"}`}
     >
-      {item.name}
+      <Link to={item.link}>{item.name}</Link>
     </li>
   ))}
 </ul>
