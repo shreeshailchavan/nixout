@@ -5,6 +5,7 @@
 ## 🚀 Live Demo
 
 View the live project here: [shreeshailchavan.github.io/nixout](https://www.google.com/search?q=https://shreeshailchavan.github.io/nixout)
+<img width="1897" height="896" alt="image" src="https://github.com/user-attachments/assets/9f5e0d47-5831-440b-9269-fd8a8f427f67" />
 
 ---
 
@@ -126,8 +127,4 @@ This project is for NixOut brand representation. All rights reserved.
 
 ---
 
-### One final tip for your GitHub repo:
 
-Upload a **screenshot** of your home page to your repository and add it to the top of the README where the first image tag is. It makes your profile look much more professional to recruiters and clients!
-
-**Would you like me to help you write a "Technical Documentation" section that explains exactly how the `.find()` logic works in your `ContentDetail` page for future developers?**
